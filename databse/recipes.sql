@@ -1,12 +1,11 @@
-CREATE TABLE "Recipes" (
-  "recipe_id" SERIAL INT,
-  "title" VARCHAR(50),
-  "category" VARCHAR(255),
-  "image" VARCHAR(255),
-  "rating" INT,
-  "ingredients" TEXT,
-  "instructions" TEXT,
-  PRIMARY KEY ("recipe_id")
+CREATE TABLE recipes (
+  recipe_id SERIAL PRIMARY KEY,
+  title VARCHAR(50),
+  category VARCHAR(255),
+  image VARCHAR(255),
+  rating INT,
+  ingredients TEXT,
+  instructions TEXT
 );
 
 INSERT INTO recipes (title, category, image, rating, ingredients, instructions) VALUES ('Eccles Cake', 'Dessert', 'https://images.ctfassets.net/u01lssz5reyv/3GgEivncpxOBExSqDvvEzn/bfd411d5ccf688765cdcfe1f9af6eb10/traditional-eccles-cakes-27342-2.jpeg?h=250',5,'
